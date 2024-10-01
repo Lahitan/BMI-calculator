@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "sans", "Verdana", "sans-serif";
+}
+
+/* nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #0000;
+}
+
+nav ul li{
+    list-style: none;
+} */
+.logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+nav{
+    display: flex;
+    padding: 1.5em 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    color: rgb(46, 43, 43);
+    transition: 0.4s;
+}
+
+.header{
+    min-height: 100vh;
+    background-image: url('images/bmi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover; 
+}
+
+.header-text{
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    flex-direction: column;
+    margin-top: 120px;
+    color: hsl(0, 0%, 100%);
+    padding-left: 2rem;
+}
+
+
+.header-text h1{
+   
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+}
+
+.header-p{
+    margin-top: 4rem;
+    font-size: 1.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em ;
+    word-break: break-word;
+    margin-top: 2em;
+}
+
+
+.about-box .about-text{
+    text-align: center;
+    padding: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-top: 1em;
+}
+
+.about h2::after{
+    content: '';
+    width: 15%;
+    height: 3px;
+    background: rgb(255, 169, 11);
+    display: block;
+    margin: auto; 
+}
+
+.btn{
+    width: 50%;
+    height: 40px;
+    background: rgb(230,169,176);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(137, 135, 135);
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    background: rgb(22, 16, 16);
+}
+
+.cal-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal{
+    width: 650px;
+    height: 530px;
+    background: rgb(230,169,176);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+}
+
+.cal h3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-box{
+    margin: auto 5rem;
+}
+
+.input-box label, input{
+    font-size: 1.3rem;
+    margin-right: 3rem;
+    padding: 1.5rem;
+    
+}
+
+.input-box > div{
+    margin-bottom: 2rem;
+}
+
+.btn1{
+    width: 50%;
+    height: 40px;
+    background: rgb(196, 125, 133);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(233, 230, 230);
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: 1rem;
+}
+
+.btn1:hover{
+    background: rgb(22, 16, 16);
+}
+
+footer{
+    background: rgb(22, 16, 16);
+    color: hsla(0, 0%, 100%, 0.651);
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h4{
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);;
+    padding: 3rem;
+ }
+ 
+
+
+@media (max-width: 520px) {
+    
+    .cal{
+        width: 450px;
+        height: 400px; 
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    
+    .cal{
+        width: 300px;
+        height: 400px; 
+    }
+
+    .input-box label, input{
+        font-size: 0.8rem;
+        margin-right: 2rem;
+        padding: 0.8rem;
+        
+    }
+
+    .input-box{
+        margin: auto 3rem;
+    }
+
+    .btn, .btn1{
+        font-size: 0.7rem;
+        
+    }
+
+    .about h2{
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        margin-top: 1em;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+}

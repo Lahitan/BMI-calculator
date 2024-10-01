@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/bmi-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+              <nav class="nav">
+                 <div ><img class="logo" src="images/bmi-logo.png" alt="BMI logo"></div>
+                   <div class="nav-links">
+                     <ul>
+                        <li ><a href="#">Home</a></li>
+                        <li ><a href="#about">About</a></li>
+                        <li><a href="#BMI-calculator">BMI Calculator</a></li>
+                     </ul>
+                 </div>
+               </nav>
+               <div class="header-text">
+                  <h1>Body Mass Index</h1>
+                  <div class="header-p">
+                    <p>A BMI calculator helps you keep track of your health.<br>
+                        It enables you to spot potential health issues early, so you can take action <br> to stay healthy. 
+                        The calculator can provide you with the opportunity to take <br> proactive measures to maintain and enhance your health.</p>
+                  </div>
+                </div>
+     </header>
+
+     <section class="about" id="about">
+         <h2>About Us</h2>
+         <div class="about-box">
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non distinctio quo dolorem
+                    numquam
+                    tempore quae dolore veritatis quisquam adipisci, qui doloremque nihil dolores consequuntur hic nemo
+                    exercitationem ipsa amet quis, accusamus dignissimos facere ab. A fugit porro
+                    non inventore quidem vel dignissimos, id beatae excepturi harum eaque voluptatibus hic.
+                </p>
+                <a class="btn" href="https://www.iciciprulife.com/tools-and-calculators/bmi-calculator.html">Learn More</a>
+            </div>
+         </div>
+     </section>
+
+     <section class="about" id="BMI-calculator">
+        <h2>Body Mass Index Calculator</h2>
+        <div class="cal-container">
+            <div class="cal">
+                <h3>Input Your Details</h3>
+                <div class="input-box">
+                    <div>
+                        <label for="height">Your Height :</label>
+                        <input type="number" placeholder="centimeters" id="height" name="height">
+                    </div>
+                    <div>
+                        <label for="weight">Your Weight :</label>
+                        <input type="number" placeholder="Kilograms" id="weight" name="weight">
+                    </div>
+                    <button class="btn1" id="bmi-cal">Calculate BMI</button>
+                </div>
+                <div id="bmi-result">
+                    <h4>Your BMI will appear here.</h4>
+                </div>
+            </div>
+        </div>
+     </section>  
+         
+     <footer>
+        <div class="footer">
+            <p>Developed by Tawakalitu Omoloja ❤️</p>
+            <p>Last updated 2024</p>
+        </div>
+     </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
