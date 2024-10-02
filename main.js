@@ -3,6 +3,7 @@ let height = document.querySelector("#height");
 let weight = document.querySelector("#weight");
 let bmiCalc = document.querySelector("#bmi-cal");
 let bmiResult = document.querySelector("#bmi-result h4");
+let calculatorContainer = document.querySelector(".cal-container");
 
 // Adding an event listener for the button click
 bmiCalc.addEventListener("click", function() {
@@ -29,5 +30,16 @@ bmiCalc.addEventListener("click", function() {
         bmiResult.innerHTML = `Your BMI is: ${bmi} (${category})`;
     } else {
         bmiResult.innerHTML = "Please enter valid values for height and weight.";
+    }
+});
+
+// Adding event listener to detect clicks outside the calculator
+document.addEventListener("click", function(event) {
+    // Check if the click is outside the calculator container
+    if (!calculatorContainer.contains(event.target)) {
+        // Reset input fields and the result
+        height.value = "";
+        weight.value = "";
+        bmiResult.innerHTML = "Your BMI will appear here.";
     }
 });

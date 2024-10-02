@@ -101,6 +101,7 @@ nav{
 .header-p{
     margin-top: 4rem;
     font-size: 1.3rem;
+    color: rgb(255, 255, 255);
 }
 
 .header-text a{
@@ -231,6 +232,11 @@ footer{
     padding: 3rem 0;
     text-align: center;
     margin-top: 3rem;
+}
+
+footer p a{
+    color:  hsla(0, 0%, 100%, 0.651);
+    text-decoration: none;
 }
 
 h4{
